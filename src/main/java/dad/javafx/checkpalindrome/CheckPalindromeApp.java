@@ -27,7 +27,7 @@ public class CheckPalindromeApp extends Application {
 		
 		checkButton = new Button("Comprobar");
 		checkButton.setDefaultButton(true);
-		checkButton.setOnAction(e -> onSaludarButtonAction(e));
+		checkButton.setOnAction(e -> onComprobarButtonAction(e));
 		
 		VBox root = new VBox();
 		root.setSpacing(5);
@@ -42,7 +42,7 @@ public class CheckPalindromeApp extends Application {
 		
 	}
 
-	private void onSaludarButtonAction(ActionEvent e) {
+	private void onComprobarButtonAction(ActionEvent e) {
 		String sentencia = nombreSentencia.getText();
 		
 	    int x = sentencia.length()-1;
